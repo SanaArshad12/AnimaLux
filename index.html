@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" 
+    integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="./css/main.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+     <header>
+        <span class="year"> 2018-2024</span>
+        <a href="/" class ="logo"><img src="/image/logo.png" alt="logo"/></a>
+     <a href="#" class="menu" onclick="toggleMenu();"></a>
+    </header>
+    <!-- cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    
+<!-- navbar -->
+
+    <div class="banner">
+        <ul class="nav">
+            <li><a href="#">SuperCars</a></li>
+            <li><a href="#">GT</a></li>
+            <li><a href="#">Ultimate</a></li>
+            <li><a href="#">Solus GT</a></li>
+            <li><a href="#">Legacy</a></li>
+
+        </ul>
+
+
+        <!-- background videos -->
+        <div class="bg-video-list">
+            <video
+            class="bg-video mclaren-1 active"
+            src="./assets/mclaren-1.mp4"
+            autoplay
+            loop
+            muted></video>
+
+            <video
+            class="bg-video mclaren-2"
+            src="./assets/mclaren-2.mp4"
+            autoplay
+            loop
+            muted></video>
+
+            <video
+            class="bg-video mclaren-3"
+            src="./assets/mclaren-3.mp4"
+            autoplay
+            loop
+            muted></video>
+            <video
+            class="bg-video mclaren-4"
+            src="./assets/mclaren-4.mp4"
+            autoplay
+            loop
+            muted></video>
+            <video
+            class="bg-video mclaren-5"
+            src="./assets/mclaren-5.mp4"
+            autoplay
+            loop
+            muted></video>
+        </div>
+
+        <div class="content">
+            <h1>McLAREN</h1>
+            <h3 class="model mclaren-1 active">765LT SPIDER</h3>
+            <h3 class="model mclaren-2 " style="color: #92ff00">ARTURA</h3>
+            <h3 class="model mclaren-3 "style="color: #ff0015">750S</h3>
+            <h3 class="model mclaren-4 "style="color: #ff2e00">765LT</h3>
+            <h3 class="model mclaren-5 "style="color: #bbc0dd">750S SPIDER</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptates praesentium quo, dignissimos adipisci deleniti sint, 
+                 obcaecati velit nulla consequatur, itaque totam ipsum. 
+              
+            </p>
+            <a href="#">Enquire</a>
+        </div>
+
+        <!-- screen and shadow -->
+        <div class="screen">
+            <div class="shadow"> </div>
+                <div>
+                    <!-- insert the screen video -->
+                    <span style="--i: 0">
+                        <!-- video data mapping -->
+                        <!-- match the video name with class name  -->
+                    <video class="trailer mclaren-1 screen-video active" src="./assets/mclaren-1.mp4" autoplay loop  muted > </video>
+                    <video class="trailer mclaren-2 screen-video active" src="./assets/mclaren-2.mp4" autoplay loop  muted > </video>    
+                    <video class="trailer mclaren-3 screen-video active" src="./assets/mclaren-3.mp4" autoplay loop  muted > </video>
+                    <video class="trailer mclaren-4 screen-video active" src="./assets/mclaren-4.mp4" autoplay loop  muted > </video>
+                    <video class="trailer mclaren-5 screen-video active" src="./assets/mclaren-5.mp4" autoplay loop  muted > </video>
+                </span>
+
+                    <span style="--i: 1">
+                        <video class=" screen-video " src="./assets/trailer-1.mp4" autoplay loop  muted > </video>
+                    </span>
+
+                    <span style="--i: 2">
+                        <video class=" screen-video " src="./assets/trailer-2.mp4" autoplay loop  muted > </video>
+                    </span>
+                    <span style="--i: 3">
+                        <video class=" screen-video " src="./assets/trailer-3.mp4" autoplay loop  muted > </video>
+                    </span>
+                </div>
+           
+        </div>
+
+    
+        <!-- Gallery Section   -->
+<div class="gallery">
+    <div class="carousel">
+      <a class="carousel-item" href="#" onclick="changeVideo('mclaren-1');">
+        <img src="./image/mclaren-1.jpg" alt=""/>
+        <h4 style="color: #ffffff">765LT SPIDER</h4>
+      </a>
+      <a class="carousel-item" href="#" onclick="changeVideo('mclaren-2');">
+        <img src="./image/mclaren-2.jpg" alt=""/>
+        <h4 style="color: #92ff00">ARTURA</h4>
+      </a>
+      <a class="carousel-item" href="#" onclick="changeVideo('mclaren-3');">
+        <img src="./image/mclaren-3.jpeg" alt=""/>
+        <h4 style="color: #ff0015">750S</h4>
+      </a>
+      <a class="carousel-item" href="#" onclick="changeVideo('mclaren-4');">
+        <img src="./image/mclaren-4.jpeg" alt=""/>
+        <h4 style="color: #ff2e00">765LT</h4>
+      </a>
+      <a class="carousel-item" href="#" onclick="changeVideo('mclaren-5');">
+        <img src="./image/mclaren-5.jpeg" alt=""/>
+        <h4 style="color: #bbc0dd">750S SPIDER</h4>
+      </a>
+    </div>
+  </div>  
+    </div>
+
+    <!-- list -->
+  <ul class="sci">
+    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+    <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+
+  </ul>
+
+  <!-- curso gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- materialize website -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" 
+     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+     <!-- Or with jQuery -->
+     
+      <script type="text/javascript">
+        $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+      </script>
+      <div id="page2">
+
+      </div>
+</body>
+</html>
